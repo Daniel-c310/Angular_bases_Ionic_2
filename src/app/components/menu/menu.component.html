@@ -1,0 +1,31 @@
+<p>menu works!</p>
+<!-- 1Rutas Simulamos un boton con este anlace, y colocamos los estilos, tambie colocamos el routerLink que se dirige a la pagina home ir al Menu.component.ts-->
+
+<!-- 
+<ul class="list-group">
+    <a routerLink="/home" class="list-group-item">
+
+        Ir a la Pagina Home
+
+    </a>
+    <a routerLink="/contact" class="list-group-item">
+
+        Ir a la Pagina Contactos
+
+    </a>
+    <a routerLink="/about" class="list-group-item">
+
+        Ir a la Pagina About
+
+    </a>
+</ul>
+-->
+
+<ul class="list-group">
+    
+    <a  [routerLink]="ruta.path" 
+        class="list-group-item"
+        *ngFor="let ruta of rutas">
+        {{ ruta.name }}
+
+    </a>
