@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
 import { AboutComponent } from './pages/about/about.component';
@@ -21,6 +21,12 @@ const routes: Routes = [ /*Rutasapp1 Creamos el arrelode rutas que vamos a usar 
 
   path: 'contact',
   component: ContactComponent
+},
+{
+
+  path: 'posts',
+  // tslint:disable-next-line: max-line-length
+  loadChildren: './pages/posts/posts.module#PostsModule' // FF Vid 23 implementamos el LaisyLow en esta linea en lugar de redirectTo usamos el LoadChildren FF Vamos a Post.HTML
 },
 {
 
