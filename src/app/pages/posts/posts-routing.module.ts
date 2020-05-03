@@ -11,7 +11,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forChild(routes)], // Indica que se está usando LaisyLow  
+  imports: [RouterModule.forChild(routes)], // Indica que se está usando LaisyLow
   exports: [RouterModule]
 })
 export class PostsRoutingModule { }

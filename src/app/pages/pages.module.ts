@@ -4,7 +4,7 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 
-//ESTA PAG SE CREO SOLAMENTE PARA LAS PAGINAS Y QUE ESTEN ACA
+// ESTA PAG SE CREO SOLAMENTE PARA LAS PAGINAS Y QUE ESTEN ACA
 
 @NgModule({
   declarations: [ // V22.1 Colocamos los componentes, estos son los de la pag appmodule que se pongan aca

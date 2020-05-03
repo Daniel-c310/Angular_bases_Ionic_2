@@ -10,6 +10,8 @@ import { AppRoutingModule } from './app-routing.module';
 // tslint:disable-next-line: max-line-length
 import { MenuComponent } from './components/menu/menu.component'; /*Rutasapp4 Verificar que se importo esta libreria para las rutas Ir a appcomponenthtml */
 import { PagesModule } from './pages/pages.module';
+// tslint:disable-next-line: max-line-length
+import { HttpClientModule } from '@angular/common/http'; // Vid 24 Importamos libreria para hacer peticiones http y la colocamos en los imputs, abajo
 
 @NgModule({
   declarations: [
@@ -23,7 +25,8 @@ import { PagesModule } from './pages/pages.module';
     BrowserModule,
     AppRoutingModule, /* RutasApp3 Aqui importamos la ruta que hab[iamos exportado de la pag que creamos, app-routing.module */
     // tslint:disable-next-line: max-line-length
-    PagesModule // V 22.3 Aqui importamos la pag que creamos, iportamos todos los modulos, asi que hay que eliminar los demas FIN reamos careta Posts y dos modulos
+    PagesModule, // V 22.3 Aqui importamos la pag que creamos, iportamos todos los modulos, asi que hay que eliminar los demas FIN reamos careta Posts y dos modulos
+    HttpClientModule // Vid24 Colocamos en imports y vamos a servicio de nuevo en data.service
   ],
   providers: [],
   bootstrap: [AppComponent]
