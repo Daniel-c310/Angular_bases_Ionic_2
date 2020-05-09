@@ -1,11 +1,11 @@
 <h1>Post</h1>
 <!-- Vid 24 Creamos el contenido de la pestaña post, y llamamos a un servicio/ Creamos el servicio llamado data-->
 <ul class="list-group">
-    <li *ngFor="let post of [1,1,1,1,1]" class="list-group-item">
+    <li *ngFor="let mensaje of mensajes |async" class="list-group-item"> <!-- Vid 25 4 reemplazamos el NgFor para que se vean los mensajes del servicio, la variable mensaje definimos en el componente.ts --> <!-- Vid 25 6 creamos la tuver[ia para implementar el nuevo codigo con ! async y vamos al servicio data.service.ts-->
         
-        <h2>Titulo</h2>
+        <h2> {{ mensaje.title }} </h2> <!-- id 25 4 reeemplazamos los valores por los del servicio -->
         <p>
-            Hola Mundo
+            {{ mensaje.body }} 
         </p>
     </li>
 </ul>
