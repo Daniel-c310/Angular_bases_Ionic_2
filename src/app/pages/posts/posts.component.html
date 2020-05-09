@@ -1,11 +1,19 @@
 <h1>Post</h1>
 <!-- Vid 24 Creamos el contenido de la pestaña post, y llamamos a un servicio/ Creamos el servicio llamado data-->
 <ul class="list-group">
-    <li *ngFor="let mensaje of mensajes |async" class="list-group-item"> <!-- Vid 25 4 reemplazamos el NgFor para que se vean los mensajes del servicio, la variable mensaje definimos en el componente.ts --> <!-- Vid 25 6 creamos la tuver[ia para implementar el nuevo codigo con ! async y vamos al servicio data.service.ts-->
+
+    <!-- VID 26 2 COMENTAMOS EL CODIGO Y LO PEGAMOS EN EL NUEVO COMPONENT postcomponent.html-->
+
+    <!-- <li *ngFor="let mensaje of mensajes |async" class="list-group-item"> Vid 25 4 reemplazamos el NgFor para que se vean los mensajes del servicio, la variable mensaje definimos en el componente.ts Vid 25 6 creamos la tuver[ia para implementar el nuevo codigo con ! async y vamos al servicio data.service.ts -->
         
-        <h2> {{ mensaje.title }} </h2> <!-- id 25 4 reeemplazamos los valores por los del servicio -->
-        <p>
-            {{ mensaje.body }} 
-        </p>
-    </li>
+        <!-- <h2> {{ mensaje.title }} </h2> id 25 4 reeemplazamos los valores por los del servicio -->
+        <!-- <p> -->
+            <!-- {{ mensaje.body }}  -->
+        <!-- </p> -->
+    <!-- </li> -->
+
+    <app-post *ngFor="let mensaje of mensajes | async"
+    [mensaje] = "mensaje">    </app-post><!-- FIN Vid 26 4 Llamamos aelcomponente hijo y pegamos el NgFor vamos a postcomponente.ts NOS QUEDAMOS ACA MISMO CREANDO LA FUNCION onClick --> 
+
+        
 </ul>

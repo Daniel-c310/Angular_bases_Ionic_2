@@ -15,7 +15,7 @@ export class DataService {
 
     return this.http.get('https://jsonplaceholder.typicode.com/posts')// Vid 24 Retornamos el contenido del JSON Vamos al post.component
     // tslint:disable-next-line: max-line-length
-    .pipe( tap( console.log ) ); /*  FIN VID 25 8 Se le agrega esta linea con el objetivo de que se puedan ver lo que se esta trayendo de la data, solo es para impimir en consola y ver, pero es necesario importar la libreria tap*/
+    .pipe( tap( console.log ) ); /*  FIN VID 25 8 Se le agrega esta linea con el objetivo de que se puedan ver lo que se esta trayendo de la data, solo es para impimir en consola y ver, pero es necesario importar la libreria VID 26 Imputs creamos un nuevo coponente que se llame Post y vamos a postscomponent.html*/
 
   }
 }
