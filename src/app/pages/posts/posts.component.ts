@@ -29,4 +29,8 @@ export class PostsComponent implements OnInit {
 
   }
 
+  EscuchaClick( id: number ) {
+    console.log( 'click en:', id );
+  }
+
 }

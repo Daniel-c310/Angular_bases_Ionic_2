@@ -13,7 +13,7 @@
     <!-- </li> -->
 
     <app-post *ngFor="let mensaje of mensajes | async"
-    [mensaje] = "mensaje">    </app-post><!-- FIN Vid 26 4 Llamamos aelcomponente hijo y pegamos el NgFor vamos a postcomponente.ts NOS QUEDAMOS ACA MISMO CREANDO LA FUNCION onClick --> 
+    [mensaje] = "mensaje" (clickPost)="EscuchaClick( $event )"></app-post><!-- FIN Vid 26 4 Llamamos aelcomponente hijo y pegamos el NgFor vamos a postcomponente.ts NOS QUEDAMOS ACA MISMO CREANDO LA FUNCION onClick --> 
 
         
 </ul>

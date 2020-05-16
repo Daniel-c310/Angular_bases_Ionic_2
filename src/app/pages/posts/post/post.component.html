@@ -1,6 +1,6 @@
 <!-- VID 26 3 Pegamos el CODIGO Y ELIMINAMOS ALGUNAS COSAS, ESTE ES EL COMONENTE HIJO, Y DESDE ACA VAMS A MOSTRAR LA INFO Vamos al postscomponent.html-->
 
-<li  class="list-group-item"> 
+<li (click)="onClick()"  class="list-group-item"> <!-- VID 27 2 Colocaos el evento onClick, pero al probar nos muestra que el id viene del componente hijo, para que salga del padre, nos vamos nuevamente a postcomponent.ts -->
 
     <h2> {{ mensaje.title }} </h2> <!-- VID 26 6  Vemos que los errores desaparecen y la variable mensaje es tomada de el postcomponente.ts-->
     <p>
